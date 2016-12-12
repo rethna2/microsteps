@@ -1,0 +1,47 @@
+
+.titles{
+    text-align: center;
+    font-size:100px;
+    margin-top:300px;
+    transition: margin-top 1s, font-size 1s;
+}
+
+.present .titles {
+    font-size:40px;
+    margin-top:10px;
+}
+
+
+.microstep{
+    opacity: 0;
+    transition: opacity 0.6s, margin-top 0.6s;
+    margin-top:60px;
+}
+
+.present .microstep.show{
+    opacity: 1;
+    margin-top:10px;
+}
+
+
+
+header{
+    padding-top: 50px;
+}
+
+.logo{
+    display:block;
+    float:right;
+    width:200px;
+    height:200px;
+}
+
+.content{
+    margin: 40px;
+}
+
+ul{
+    margin-left: 100px;
+    list-style-type: circle;
+    list-style-position: outside; 
+}
