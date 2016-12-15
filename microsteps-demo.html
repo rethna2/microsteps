@@ -1,125 +1,124 @@
-<html>
-<head>
-    <link href="css/impress-demo.css" rel="stylesheet" />
-	<link href="css/microsteps.css" rel="stylesheet" /> 
-</head>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>microsteps</title>
 
-<body class="impress-not-supported">
+        <link rel="stylesheet" href="css/impress-demo.css" />
+        <link rel="stylesheet" href="css/microsteps.css" />
+    </head>
 
-    <div class="fallback-message">
-        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
-        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
-    </div>
+    <body class="impress-not-supported">
+        <div class="fallback-message">
+            <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+            <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+        </div>
 
-    <div id="impress">
+        <div id="impress">
+            <div id="overview" class="step" data-x="-1500" data-y="-400"  data-scale="2"></div>
 
+            <div class="step slide" data-x="-2500" data-y="-775">
+                <div class="titles">
+                    <header id="html">HTML</header>
+                </div>
+                <div class="content">
+                    <p class="microstep">Hypertext Markup Language.</p>
+                    <img class="microstep logo" src="img/HTMLLogo.png">
+                    <p class="microstep">
+                        HTML defines the information or data.<br>
+                        eg : paragraph, heading, image, table, list.
+                    </p>
+                    <p class="microstep">There are three parts in writing HTML.</p>
+                    <ul class="microstep">
+                        <li><b>tag:</b> specifies the type of the content.</li>
+                        <li><b>attribute:</b> gives more information about the tag.</li>
+                        <li><b>children:</b> body of the tag.</li>
+                    </ul>
+                </div>
+            </div>
 
-     <div id="overview" class="step" data-x="-1500" data-y="-400"  data-scale="2">
-     </div>
+            <div class="step slide" data-x="-1500" data-y="-775">
+                <div class="titles">
+                    <header id="css">CSS</header>
+                </div>
+                <div class="content">
+                    <b class="microstep">Cascading Style Sheet</b>
+                    <img class="microstep logo" src="img/css.png">
+                    <p class="microstep">
+                        CSS styles the information.<br>
+                        Eg: Color and size of font, background color, border etc
+                    </p>
+                    <p class="microstep">CSS also specify the layout of the website.</p>
+                </div>
+            </div>
 
-     <div class="step slide" data-x="-2500" data-y="-775" >
-         <div class="titles">
-          <header id="html">HTML</header>
-      </div>
-      <div class="content">
-        <p class="microstep">Hypertext Markup Language.</p>
-        <img class = "microstep logo" src = "img/HTMLLogo.png">
-        <p class="microstep">HTML defines the information or data.<br>
-            eg : paragraph, heading, image, table, list.</p>	
+            <div class="step slide" data-x="-500" data-y="-775">
+                <div class="titles positioning">
+                    <header id="js">JavaScript</header>
+                </div>
+                <div class="content">
+                    <img class="microstep logo" src="img/js.jpg">
+                    <p class="microstep">Javascript adds interactivity to your application.</p>
+                    <p class="microstep">It captures user input and dynamically change the content.</p>
+                    <p class="microstep">It fetches information from server and display.</p>
+                    <p class="microstep">Recent times, we write most of the business logic in javascript,  and reduce the load on the server. </p>
+                    <p class="microstep">It means we can save money.</p>
+                </div>
+            </div>
 
-            <p class="microstep">There are three parts in writing HTML</p>
-
-            <ul class="microstep">
-             <li><b>tag:</b> specifies the type of the content </li>
-             <li><b>attribute:</b> gives more information about the tag. </li>
-             <li><b>children:</b> body of the tag.</li>
-         </ul>
-     </div>
- </div>
-
- <div class="step slide" data-x="-1500" data-y="-775" >
-     <div class="titles">
-      <header id="css" >CSS</header>
-  </div>
-  <div class="content">
-      <b class="microstep">Cascading Style Sheet</b>
-      <img class = "microstep logo" src = "img/css.png">
-      <p class="microstep">CSS styles the information.<br>
-        Eg: Color and size of font, background color, border etc</p>
-        <p class="microstep">CSS also specify the layout of the website.</p>
-    </div>
-
-</div>
-
-<div class="step slide" data-x="-500" data-y="-775" >
-  <div class="titles positioning">
-   <header id="js">JavaScript</header>
-</div>
-<div class="content">
-   <img class = "microstep logo" src = "img/js.jpg">
-   <p class="microstep">Javascript adds interactivity to your application.</p>
-   <p class="microstep">It captures user input and dynamically change the content.</p>
-   <p class="microstep">It fetches information from server and display.</p>
-   <p class="microstep">Recent times, we write most of the business logic in javascript,  and reduce the load on the server. </p>
-   <p class="microstep">It means we can save money.</p>
-</div>
-</div>
-
-<div  class="step slide" data-x="-2500" data-y="-25" >
-  <div class="titles positioning">
-     <header id="html5">HTML5</header>
- </div>
- <div class="content">
-   <img class = "microstep logo" src = "img/HTML5Logo.png">
-   <p class="microstep">Whatever present in HTML topic plus lots of new feature.</p>
-   <p class="microstep">Lots of new input types. Eg : Color, email, range</p>
-   <p class="microstep">Lots of new semantic tags: Eg: header, article, footer</p>
-   <p class="microstep">Support for Video and Audio</p>
-   <p class="microstep">Advanced graphic support through SVG and Canvas</p>
-
-</div>
-</div>
-
-
-<div class="step slide" data-x="-1500" data-y="-25" >
- <div class="titles positioning">
-   <header id="css3" >CSS3</header>
-</div>
-<div class="content">
-    <img class = "microstep logo" src = "img/css3.png">
-    <p class="microstep positioning">Whatever present in CSS topic plus lots of new feature.</p>
-    <p class="microstep">Supports rounded corners, gradient, shadows</p>
-    <p class="microstep">Support for animation effects and time bound animations</p>
-    <p class="microstep">New tools for layouting like Flex box.</p>
-</div>
-</div>
-
-<div class="step slide" data-x="-500" data-y="-25" >
-  <div class="titles positioning">
-   <header id="es6" >ES6</header>
-</div>
-<div class="content">
-    <img class = "microstep logo" data-order="6" src = "img/ES6.png">
-    <p class="microstep" data-order="5">The latest version of JavaScript. Here we will look at new features.</p>
-    <p class="microstep" data-order="3">Lot of new keywords borrowed from other programming languages: Eg: <i>class, extends, static, const </i></p>
-    <p class="microstep" data-order="1">Support for block level scope, in addition to the default function level scope.</p>
-    <p class="microstep" data-order="2">More options when when working with arrays and collections.</p>
-    <p class="microstep"  data-order="4">And more advanced level features.</p>
-</div>
-</div>
+            <div  class="step slide" data-x="-2500" data-y="-25">
+                <div class="titles positioning">
+                    <header id="html5">HTML5</header>
+                </div>
+                <div class="content">
+                    <img class="microstep logo" src="img/HTML5Logo.png">
+                    <p class="microstep">Whatever present in HTML topic plus lots of new feature.</p>
+                    <p class="microstep">Lots of new input types. Eg : Color, email, range</p>
+                    <p class="microstep">Lots of new semantic tags: Eg: header, article, footer</p>
+                    <p class="microstep">Support for Video and Audio.</p>
+                    <p class="microstep">Advanced graphic support through SVG and Canvas.</p>
+                </div>
+            </div>
 
 
-</div>
-<div class="hint">
- <p>Use a spacebar or arrow keys to navigate</p>
-</div>
+            <div class="step slide" data-x="-1500" data-y="-25">
+                <div class="titles positioning">
+                    <header id="css3">CSS3</header>
+                </div>
+                <div class="content">
+                    <img class="microstep logo" src="img/css3.png">
+                    <p class="microstep positioning">Whatever present in CSS topic plus lots of new feature.</p>
+                    <p class="microstep">Supports rounded corners, gradient, shadows.</p>
+                    <p class="microstep">Support for animation effects and time bound animations.</p>
+                    <p class="microstep">New tools for layouting like Flex box.</p>
+                </div>
+            </div>
 
-<script>
-  if ("ontouchstart" in document.documentElement) { 
-      document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
-  }
-</script>
-<script src="js/impress.js"></script>
-<script src="microsteps.js"></script>
-</body>
+            <div class="step slide" data-x="-500" data-y="-25">
+                <div class="titles positioning">
+                    <header id="es6">ES6</header>
+                </div>
+                <div class="content">
+                    <img class="microstep logo" data-order="6" src="img/ES6.png">
+                    <p class="microstep" data-order="5">The latest version of JavaScript. Here we will look at new features.</p>
+                    <p class="microstep" data-order="3">Lot of new keywords borrowed from other programming languages: Eg: <i>class, extends, static, const</i></p>
+                    <p class="microstep" data-order="1">Support for block level scope, in addition to the default function level scope.</p>
+                    <p class="microstep" data-order="2">More options when when working with arrays and collections.</p>
+                    <p class="microstep"  data-order="4">And more advanced level features.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="hint">
+            <p>Use a spacebar or arrow keys to navigate</p>
+        </div>
+
+        <script>
+            if("ontouchstart" in document.documentElement) document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+        </script>
+
+        <script src="js/impress.js"></script>
+        <script src="microsteps.js"></script>
+    </body>
 </html>
