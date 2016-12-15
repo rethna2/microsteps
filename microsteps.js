@@ -1,39 +1,32 @@
 (function(){
-	impress().init();
+    impress().init();
+    var counter, microsteps;
 
-    var counter;
-    var listOfMicroSteps
-
-    document.getElementById("impress").addEventListener("impress:stepenter", checkMicroSteps);
+    document.getElementById("impress").addEventListener("impress:stepenter", checkMicrosteps);
     document.getElementById("impress").addEventListener("impress:stepleave", removeShowClass);
 
-    function checkMicroSteps(){
+    function checkMicrosteps(){
         counter = 0;
         var list = document.getElementsByClassName("present")[0].querySelectorAll(".microstep");
-        listOfMicroSteps = [].slice.call( list );
 
-        listOfMicroSteps.sort(function(a,b){
-            return ( Number(a.getAttribute("data-order")) - Number(b.getAttribute("data-order")))
-        })
-    }
-
-    function removeShowClass(){
-        listOfMicroSteps.forEach(function(elem){
-             elem.classList.remove("show");
+        microsteps = [].slice.call(list);
+        microsteps.sort(function(a, b){
+            return Number(a.getAttribute("data-order")) - Number(b.getAttribute("data-order"));
         });
     }
 
-    document.addEventListener( "keyup", function( event ){
-        if(event.keyCode==39){
-            if(counter < listOfMicroSteps.length){
-                //listOfMicroSteps[counter].style.visibility = "visible";
-                listOfMicroSteps[counter].classList.add("show");
-               counter++;
-               event.stopImmediatePropagation();		
-            }	
-        }else{
-            removeShowClass();
+    function removeShowClass(){
+        counter = 0;
+        microsteps.forEach(function(elem){
+            elem.classList.remove("show");
+        });
+    }
+
+    document.addEventListener("keyup", function(event){
+        if(event.keyCode !== 39) removeShowClass();
+        else if(counter < microsteps.length){
+            event.stopImmediatePropagation();
+            microsteps[counter++].classList.add("show");
         }
     }, true);
 })();
-
